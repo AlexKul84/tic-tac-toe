@@ -28,7 +28,7 @@ const check = () => {
             cells[0].innerHTML === 'X' && cells[4].innerHTML === 'X' && cells[8].innerHTML === 'X' ||
             cells[2].innerHTML === 'X' && cells[4].innerHTML === 'X' && cells[6].innerHTML === 'X'  
         ) {
-            resultContent.innerHTML = `Выиграли крестики<br> Количество ходов ${sum}`
+            resultContent.innerHTML = `Выиграли крестики<br> Количество ходов ${move}`
             result.classList.add('open')
             cover.classList.add('open')
         } else if (
@@ -41,7 +41,7 @@ const check = () => {
             cells[0].innerHTML === 'O' && cells[4].innerHTML === 'O' && cells[8].innerHTML === 'O' ||
             cells[2].innerHTML === 'O' && cells[4].innerHTML === 'O' && cells[6].innerHTML === 'O' 
         ) {
-            resultContent.innerHTML = `Выиграли нолики<br> Количество ходов ${sum}`
+            resultContent.innerHTML = `Выиграли нолики<br> Количество ходов ${move}`
             result.classList.add('open')
             cover.classList.add('open')
         }
