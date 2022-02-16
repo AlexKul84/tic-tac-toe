@@ -50,8 +50,6 @@ btn.addEventListener('click', e => {
     if(e.target.className = 'btn') {
         result.classList.remove('open')
         cover.classList.remove('open')
-        for (let i = 0; i < cells.length; i++) {
-            cells[i].innerHTML = ''
-        }
+        location.reload()
     }
 })
