@@ -15,7 +15,9 @@ table.addEventListener('click', e => {
 
 const check = () => {
     const cells = document.getElementsByClassName('cells')
+    let sum = 0
     for (let i = 0; i < 9; i++) {
+        sum += 1
         if (
             cells[0].innerHTML === 'X' && cells[1].innerHTML === 'X' && cells[2].innerHTML === 'X' ||
             cells[3].innerHTML === 'X' && cells[4].innerHTML === 'X' && cells[5].innerHTML === 'X' ||
@@ -26,7 +28,7 @@ const check = () => {
             cells[0].innerHTML === 'X' && cells[4].innerHTML === 'X' && cells[8].innerHTML === 'X' ||
             cells[2].innerHTML === 'X' && cells[4].innerHTML === 'X' && cells[6].innerHTML === 'X'  
         ) {
-            resultContent.innerHTML = 'x - win'
+            resultContent.innerHTML = `Выиграли крестики<br> Количество ходов ${sum}`
             result.classList.add('open')
             cover.classList.add('open')
         } else if (
@@ -39,7 +41,7 @@ const check = () => {
             cells[0].innerHTML === 'O' && cells[4].innerHTML === 'O' && cells[8].innerHTML === 'O' ||
             cells[2].innerHTML === 'O' && cells[4].innerHTML === 'O' && cells[6].innerHTML === 'O' 
         ) {
-            resultContent.innerHTML = 'o - win'
+            resultContent.innerHTML = `Выиграли нолики<br> Количество ходов ${sum}`
             result.classList.add('open')
             cover.classList.add('open')
         }
