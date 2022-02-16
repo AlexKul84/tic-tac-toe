@@ -15,9 +15,7 @@ table.addEventListener('click', e => {
 
 const check = () => {
     const cells = document.getElementsByClassName('cells')
-    let sum = 0
     for (let i = 0; i < 9; i++) {
-        sum += 1
         if (
             cells[0].innerHTML === 'X' && cells[1].innerHTML === 'X' && cells[2].innerHTML === 'X' ||
             cells[3].innerHTML === 'X' && cells[4].innerHTML === 'X' && cells[5].innerHTML === 'X' ||
