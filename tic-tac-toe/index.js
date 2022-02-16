@@ -2,6 +2,7 @@ const table = document.querySelector('table')
 const result = document.getElementById('result')
 const cover = document.getElementById('cover')
 const resultContent = document.getElementById('result_content')
+const btn = document.getElementById('btn')
 let move = 0
 
 table.addEventListener('click', e => {
@@ -44,3 +45,13 @@ const check = () => {
         }
     }
 }
+
+btn.addEventListener('click', e => {
+    if(e.target.className = 'btn') {
+        result.classList.remove('open')
+        cover.classList.remove('open')
+        for (let i = 0; i < cells.length; i++) {
+            cells[i].innerHTML = ''
+        }
+    }
+})
