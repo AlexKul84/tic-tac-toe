@@ -49,8 +49,59 @@ main {
     position: relative;
     background-color: #00acac;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+}
+
+.result {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150px, -75px);
+    width: 300px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 1px solid #ed403c;
+    
+}
+
+.result.open{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    display: none;
+}
+
+.cover.open {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);;
+}
+
+.result_content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    background-color: #00acac;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .table {
@@ -58,6 +109,7 @@ main {
     height: 300px;
     border-spacing: 0px;
     border-collapse: collapse;
+    box-sizing: border-box;
 }
 
 @media (max-width: 350px) {
@@ -76,11 +128,15 @@ main {
 
 .cells {
     border: 6px solid #ed403c;
+    width: 100px;
+    height: 100px;
 }
 
 @media (max-height: 450px) {
     .cells {
         border: 3px solid #ed403c;
+        width: 50px;
+        height: 50px;
     }
 }
 
