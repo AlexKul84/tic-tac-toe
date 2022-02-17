@@ -138,6 +138,11 @@ main {
     font-size: 80px;
     text-align: center;
     color: #ed403c;
+    cursor: pointer;
+}
+
+.cells:hover {
+    background-color: #005050;
 }
 
 @media (max-height: 450px) {
