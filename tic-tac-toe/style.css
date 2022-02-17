@@ -135,6 +135,9 @@ main {
     width: 100px;
     height: 100px;
     transition: .5s;
+    font-size: 80px;
+    text-align: center;
+    color: #ed403c;
 }
 
 @media (max-height: 450px) {
@@ -209,32 +212,4 @@ footer {
 
 .rolling_link:hover {
     filter: invert(46%) sepia(16%) saturate(6392%) hue-rotate(149deg) brightness(97%) contrast(100%);
-}
-
-.cross {
-    background: #ed403c;
-    height: 80px;
-    width: 10px;
-    position: relative;
-    left: 40px;
-}
-
-.cross:after {
-    content: "";
-    height: 10px;
-    width: 80px;
-    background: #ed403c;
-    position: absolute;
-    left: -36px;
-    top: 35px;
-}
-
-.circle {
-    width: 80px;
-    height: 80px;
-    background: #00acac;
-    border-radius: 50%;
-    position: relative;
-    left: 8px;
-    border: 10px solid #ed403c;
 }

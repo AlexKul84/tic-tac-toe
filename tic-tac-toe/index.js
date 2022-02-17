@@ -3,8 +3,8 @@ const result = document.getElementById('result')
 const cover = document.getElementById('cover')
 const resultContent = document.getElementById('result_content')
 const btn = document.getElementById('btn')
-const x = '<div class="cross"></div>'
-const o = '<div class="circle"></div>'
+const x = 'X'
+const o = 'O'
 let move = 0
 
 table.addEventListener('click', e => {
